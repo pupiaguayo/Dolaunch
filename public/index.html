@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Con un simple click podras conocér el importe final en pesos de tus compras en dólares en el exterior"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="icon" type="image/png" href="img/icon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dolaunch</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <img src="img/logo.png" class="logo" />
+      <label id="button-menu"><i class="fas fa-bars button-menu"></i></label>
+      <ul class="navbar-links" id="nav-links">
+        <li>
+          <a href="#comoFunca">¿CÓMO FUNCIONA?</a>
+        </li>
+        <li>
+          <a href="#calcular">CALCULAR</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="card mb-3 info" id="inicio">
+      <img src="img/1.jpg" class="card-img-top" />
+      <div class="card-body">
+        <h2 class="card-title">Bienvenidos a DOLAUNCH</h2>
+        <p class="card-text">
+          ¿Estás por realizar una compra en dólares? DOLAUNCH te permite conocer
+          el precio final de tu compra con todos los impuestos incluidos.
+        </p>
+        <p class="card-text">
+          Colocá el monto y con solo un click podrás ver el importe final en
+          pesos y el restante de tu cupo mensual.
+        </p>
+        <p class="card-text"></p>
+      </div>
+    </div>
+    <div class="container contenedor-cupo">
+      <div class="row">
+        <div class="col-12" id="mesesCupo"></div>
+      </div>
+    </div>
+    <div class="container contenedor-edit">
+      <div class="row">
+        <div class="col-6">
+          <img src="img/Franklin.png" class="imagen" />
+        </div>
+        <div class="col-6">
+          <img src="img/Roca.png" class="imagen" />
+        </div>
+      </div>
+    </div>
+    <div class="container contenedor-informacion" id="calcular">
+      <div class="row">
+        <div class="col-6">
+          <p id="textIngresar">INGRESE DÓLARES</p>
+          <input type="number" id="dolares" />
+          <button type="submit" id="btn">consultar</button>
+        </div>
+        <div class="col-6" id="contenedor">
+          <p id="pesos"></p>
+        </div>
+      </div>
+    </div>
+    <div class="cotizar" id="comoFunca">
+      <h2>¿CÓMO FUNCIONA DOLAUNCH?</h2>
+      <p>
+        El monto de tu compra en USD se convierte a $ según la cotizacion
+        oficial del
+        <a
+          href="http://www.bcra.gob.ar/PublicacionesEstadisticas/Tipo_de_cambio_minorista.asp"
+          >BCRA</a
+        >
+      </p>
+      <p>
+        A este monto se le suman los impuestos, pais(30%) y ganancias(35%),
+        ambos se aplican sobre la cotizacion oficial.
+      </p>
+    </div>
+    <footer>
+      <div class="container-redes">
+        <a class="instagram" href="https://instagram.com/pupiaguayo"
+          ><i class="fab fa-instagram fa-2x"></i
+        ></a>
+        <a class="twitter" href="https://twitter.com/pupiaguayo"
+          ><i class="fab fa-twitter fa-2x"></i
+        ></a>
+        <a class="github" href="https://github.com/pupiaguayo"
+          ><i class="fab fa-github fa-2x"></i
+        ></a>
+      </div>
+      <div class="copyright">© 2020 Pupi Aguayo</div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+      integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
